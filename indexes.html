@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="httpd://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars "></div>
+
+        <a href="#" class="logo" ><span>TOURS AND TRAVELS</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#packages">Packages</a>
+            <a href="#book">Book</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#feedback">feedback</a>
+        </nav>
+
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here . . . . .">
+            <label for="saerch-bar" class="fas fa-search"></label>
+        </form>
+
+
+    </header>
+
+
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="https://formspree.io/f/mpzkeykj" method="POST">
+            <h3>Login</h3>
+            <input type="email" name="email" class="box" placeholder="Enter your Email">
+            <input type="password" name="password" class="box" placeholder="Password">
+            <b><input type="submit" value="login now" class="btn" type="submit" Send></b>
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have any account? <a href="#">register now</a></p>
+        </form>
+    </div>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>JOURNEY TO THE WORLD</h3>
+            <b><p>Explore new world with us, bon voyage</p></b>
+            <a href="#" class="btn">Discover more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+
+        </div>
+    </section>
+
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>PACKAGES</span>
+
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content" >
+                    <h3> <i class="fas fa-map-marker-alt" ></i> MUMBAI </h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 5000/- <span>   8000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> HAWAII </h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 18,000/- <span>   25,000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> SYDNEY </h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 22,000/- <span>   30,000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-4..jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> PARIS </h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price"> 20,000/- <span>   27,000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> TOKYO </h3>
+
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">19,000/- <span>   24,000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Egypt </h3>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 25,000/- <span>   30,000/-</span> </div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>BOOKINGS</span>
+
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>Destination</h3>
+                    <input type="text" name="place name">
+                </div>
+                <div class="inputBox">
+                    <h3>Total Guests</h3>
+                    <input type="number" name="Number of Guests">
+                </div>
+                <div class="inputBox">
+                    <h3>Arriving date</h3>
+                    <input type="date" name="Arriving date">
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving date</h3>
+                    <input type="date" name="Leaving date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>SERVICES</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-building"></i>
+                <h3>affordable hotels</h3>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-wine-bottle"></i>
+                <h3>food and drinks</h3>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-people-arrows"></i>
+                <h3>safty guide</h3>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-train"></i>
+                <h3>fastest travel</h3>
+
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+            </div>
+            
+            <section class="gallery" id="gallery">
+
+                <h1 class="heading">
+                    <span>GALLERY</span>
+                </h1>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="images/g-1.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+                        
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-2.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-3.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-4.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-5.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-6.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-7.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-8.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="images/g-9.jpg" alt="">
+                        <div class="content">
+                            <h3>amazing places</h3>
+
+                            <a href="#" class="btn">see more</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+        </div>
+
+    </section>
+
+    <section class="feedback" id="feedback">
+
+        <h1 class="heading">
+            <span>FEEDBACK</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/feedback.jpg" alt="">
+            </div>
+
+            <form action="https://formspree.io/f/xrgrvyoj" method="POST">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name">
+                    <input type="email" name="replyto" placeholder="Email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="Number">
+                    <input type="text" name="subject" placeholder="Subject">
+                </div>
+                <textarea placeholder="Message" name="message" id="" cols="30" rows="10"></textarea>
+                <button class="btn btn-info btn-block" type="submit">Send</button>
+            </form>
+
+        </div>
+
+    </section>
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>about us</h3>
+                <p>Hola ! We are a travelling agency website.</p>
+                <p>I hope we were able to provide appropriate services to you.</p>
+                <p>Thank You</p>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">packages</a>
+                <a href="#">book</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">feedback</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">instagram</a>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> designed by <span> The WeBros </span> | all rights reserved! </h1>
+
+    </section>
+
+
+
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
